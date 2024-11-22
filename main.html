@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Application</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1>Dog Adoption Application</h1>
 
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+
+            <!-- Checkbox: Have you ever lived with a dog before -->
+            <div class="form-group">
+                <label for="dog-experience">
+                    <input type="checkbox" id="dog-experience" name="dog-experience">
+                    Have you ever lived with a Dog before?
+                </label>
+            </div>
+
+            <!-- Multi-select Field: Preferred Breeds -->
+            <div class="form-group">
+                <label for="breeds">Please select your preferred breeds</label>
+                <select id="breeds" name="breeds" multiple>
+                    <option value="golden-retriever">Golden Retriever</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="bulldog">Bulldog</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
